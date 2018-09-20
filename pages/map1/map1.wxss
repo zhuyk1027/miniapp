@@ -1,0 +1,7 @@
+.button{
+  margin: 10rpx 10rpx 0rpx 0rpx;
+}
+.message{
+  font-size:14px;
+  color:gray;
+}

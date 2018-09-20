@@ -1,0 +1,11 @@
+<map id="myMap" show-location style='width:100%;height:450px;' />
+
+<button type="primary" size="mini" plain="true" class="button" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" size="mini" plain="true" class="button" bindtap="moveToLocation">移动位置</button>
+<!-- <button type="primary" size="mini" plain="true" class="button" bindtap="translateMarker">移动标注</button> -->
+<button type="primary" size="mini" plain="true" class="button" bindtap="getRegion">视野范围</button>
+<button type="primary" size="mini" plain="true" class="button" bindtap="getScale">缩放级别</button>
+<button type="primary" size="mini" plain="true" class="button" bindtap="includePoints">缩放视野展示所有经纬度</button>
+<text class="message" id="message">
+    {{message}}
+</text>

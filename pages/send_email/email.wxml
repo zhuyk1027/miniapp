@@ -1,0 +1,13 @@
+<!-- 获取二维码 -->
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <input type="text" name='text_to' class="text_title" placeholder='请输入收件人'/>
+    <input type="text" name='text_title' class="text_title" placeholder='邮件标题'/>
+    <textarea name="text_cont" bindblur="bindTextAreaBlur" placeholder="请输入邮件内容,限制140字..." class="text_cont" />
+    <button form-type="submit"  class="green" > 发送 </button>
+  </form>
+</view>
+
+<view  wx:if="{{flag}}" class="text">
+  发送成功了
+</view>

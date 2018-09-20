@@ -1,0 +1,20 @@
+
+
+.tool-item {
+  display: inline-block;
+  margin:10px 5px 0px 5px;  
+  padding:10px; 
+  font-size: 36rpx;
+  color:#fff;
+  border-radius:25rpx;
+}
+
+.tool-item:nth-child(9n){background: #4A4A4A;}
+.tool-item:nth-child(9n+1){background: #428BCA;}
+.tool-item:nth-child(9n+2){background: #5CB85C;}
+.tool-item:nth-child(9n+3){background: #D9534F;}
+.tool-item:nth-child(9n+4){background: #567E95;}
+.tool-item:nth-child(9n+5){background: #B433FF;}
+.tool-item:nth-child(9n+6){background: #00ABA9;}
+.tool-item:nth-child(9n+7){background: #B37333;}
+.tool-item:nth-child(9n+8){background: #FF6600;}

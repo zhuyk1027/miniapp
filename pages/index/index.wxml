@@ -1,13 +1,55 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+<!-- 轮播图 -->
+<swiper class="blog_home_banner_div" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="banner">
+    <swiper-item>
+      <image src="{{item.pic}}" class="blog_home_banner" mode="widthFix" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 推荐 -->
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <block wx:for="{{blog_top}}" wx:key="blog_top">
+      <view class="flex-item">
+          <view class="blog_title">{{item.title}}</view>
+          <view class="blog_cont">{{item.cont}}</view>
+      </view>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+
+<!-- 标签 -->
+<view class="section">
+  <view class="friend_div">
+    <block wx:for="{{groups}}" wx:key="friend_list">
+      <view class="tag-list">
+          {{item.group_name}}
+      </view>
+    </block>
+    <block wx:for="{{tags}}" wx:key="friend_list">
+      <view class="tag-list">
+          {{item.tag_name}}
+      </view>
+    </block>
   </view>
+</view>
+
+<!-- 首页列表 -->
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:column;">
+    <block wx:for="{{blog_list}}" wx:key="blog_list">
+      <view class="flex-item-list">
+          <view class="blog_title">{{item.title}}</view>
+          <view class="blog_cont">{{item.cont}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<view class="section">
+  <view class="end">- - - 我是有底线的 - - -</view>
 </view>

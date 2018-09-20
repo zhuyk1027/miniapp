@@ -1,21 +1,68 @@
 /**index.wxss**/
-.userinfo {
+.blog_home_banner {
+  width: 100%; 
+  margin: 0px;
+}
+
+.section_title{
+  line-height: 2;
+  font-size: 28px;
+  background: #E0E0E0;
+}
+.flex-wrp {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0rpx;
+  padding: 0rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/* 推荐div */
+.flex-item {
+  background: #EDEDED;
+  width:48%; 
+  height: 194rpx;
+  padding:0% 1%;
+  overflow: hidden;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+
+
+/* 文章列表 */
+.flex-item-list {
+  background: #EDEDED;
+  width:96%; 
+  height: 140rpx;
+  padding:10rpx 2%;
+  word-wrap:break-word;
+  overflow: hidden;
+}
+.blog_title{
+  font-size: 32rpx;
+  color:#428BCA;
+  padding-top:5rpx;
+}
+.blog_cont{
+  font-size: 28rpx;
+  color:#777;
 }
 
-.usermotto {
-  margin-top: 200px;
+
+/** 标签列表 */
+.tag-list {
+  display: inline-block;
+  /* background : #CDC673; */
+  margin:10px 5px 0px 5px;  
+  padding:5px; 
+  font-size: 30rpx;
+  color:#fff;
+  border-radius:25%;
 }
+
+.tag-list:nth-child(9n){background: #4A4A4A;}
+.tag-list:nth-child(9n+1){background: #428BCA;}
+.tag-list:nth-child(9n+2){background: #5CB85C;}
+.tag-list:nth-child(9n+3){background: #D9534F;}
+.tag-list:nth-child(9n+4){background: #567E95;}
+.tag-list:nth-child(9n+5){background: #B433FF;}
+.tag-list:nth-child(9n+6){background: #00ABA9;}
+.tag-list:nth-child(9n+7){background: #B37333;}
+.tag-list:nth-child(9n+8){background: #FF6600;}

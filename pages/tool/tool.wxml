@@ -1,0 +1,19 @@
+<view class="tool_list">
+  <view class="tool-item">
+      <navigator url="/pages/logs/logs" >启动日志</navigator>
+  </view>
+  <view class="tool-item">
+      <navigator url="/pages/map/map" >微信地图</navigator>
+  </view>
+  <view class="tool-item">
+      <navigator url="/pages/map1/map1" >自定义微信地图</navigator>
+  </view>
+  <view class="tool-item">
+      <navigator url="/pages/qrcode/qrcode" >生成二维码</navigator>
+  </view>
+  <block wx:for="{{tool}}" wx:key="banner">
+  <view class="tool-item">
+      <navigator url="{{item.url}}" >{{item.title}}</navigator>
+  </view>
+</block>
+</view>

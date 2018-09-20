@@ -1,0 +1,12 @@
+<!-- 获取二维码 -->
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <input type="text" name='url' id="url" class="text" placeholder='请输入网址or内容'/>
+    <button form-type="submit"  class="green" > 获取 </button>
+  </form>
+</view>
+
+<view id="qrcodeview"  wx:if="{{flag}}" >
+  <image src="{{imgUrls}}"  class='qrcode'/>
+  <button bindtap="saveImgToPhotosAlbumTap" style="width:60%;">保存图片到手机相册</button>
+</view>

@@ -1,13 +1,37 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/tool/tool",
+    "pages/logs/logs",
+    "pages/qrcode/qrcode",
+    "pages/send_email/email",
+    "pages/map/map",
+    "pages/map1/map1"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#E5E5E5",
     "navigationBarTitleText": "灰猪领地",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "selectedColor": "#616161",
+    "backgroundColor":"#E5E5E5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "笔记",
+        "iconPath":"Public/icon/blog-gray.png",
+        "selectedIconPath":"Public/icon/blog.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "Public/icon/tool-gray.png",
+        "selectedIconPath": "Public/icon/tool.png"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 30000,

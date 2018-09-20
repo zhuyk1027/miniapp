@@ -1,0 +1,18 @@
+.text_title{
+  text-align: center;
+  border-bottom: 1rpx solid #D4D4D4;
+  width: 90%;
+  margin: 10% 5% 0%;
+}
+
+.text_cont{
+  border: 1rpx solid #D4D4D4;
+  width: 90%;
+  margin: 35px 5% ;
+  min-height: 120rpx;
+}
+
+.text{
+  text-align: center;
+  margin-top: 30rpx;
+}
